@@ -1,0 +1,21 @@
+{
+  "name": "rail-layer",
+  "version": "2.0.3",
+  "title": "Rail Layer",
+  "author": "Thaui",
+  "description": "Add a locomotive that can place rails, signals.",
+  "dependencies": [],
+  "factorio_version": "2.0",
+  "package": {
+    "readme": "README.md",
+    "gallery": [
+      "gallery/**.png"
+    ],
+    "ignore": [
+      "examples/**"
+    ],
+    "license": "LICENSE",
+    "sync_portal_details": true
+  },
+  "license": "MIT"
+}

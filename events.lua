@@ -1,0 +1,1 @@
+require"events.script_trigger_effect"
