@@ -2,6 +2,7 @@
   "name": "rail-layer",
   "version": "0.0.1",
   "title": "Rail Layer",
+  "homepage": "https://github.com/YPetremann/rail-layer",
   "author": "Thaui",
   "description": "Add a locomotive that place ghost rails and signals.",
   "dependencies": [],
