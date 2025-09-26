@@ -1,7 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.3
-Date: ????
-  Changes:
+Date: 2025-09-26
+  Experimental:
+    - (Experimental) support for power poles placement in a 7 tile wide circle around the rail layer
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 2025-09-26

@@ -1,4 +1,6 @@
-local rail_build = require("scripts.rail_discover")
+local revive_rails = require"scripts.revive_rails"
+local revive_signals = require"scripts.revive_signals"
+local revive_power_poles = require"scripts.revive_power_poles"
 
 ---@param event EventData.on_script_trigger_effect
 return function(event)
@@ -7,9 +9,7 @@ return function(event)
   local train = rail_layer.train
   if not train then return end      -- not a train
 
-  local rail_end = train.speed > 0 and train.front_end or train.back_end
-  
-  rail_build(train, rail_end, 15)
-
-  
+  revive_rails(train, 7)
+  revive_signals(train, 7)
+  revive_power_poles(train, 7)
 end
