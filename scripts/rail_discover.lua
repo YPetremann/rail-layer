@@ -81,7 +81,7 @@ local function rail_ghost_build(train, rail_end, radius)
     local quality = entity.quality or "normal"
     local items = entity.ghost_prototype.items_to_place_this or {}
     if not can_remove_items(train, items, quality) then goto continue end
-    local collide, revived, proxy = entity.revive{inventory = inv}
+    local collide, revived, proxy = entity.revive{raise_revive=true, inventory = inv}
     if not revived then goto continue end
     remove_items(train, items, quality)
     ::continue::
@@ -109,7 +109,7 @@ local function rail_ghost_build(train, rail_end, radius)
     local quality = entity.quality or "normal"
     local items = entity.ghost_prototype.items_to_place_this or {}
     if not can_remove_items(train, items, quality) then goto continue end
-    local collide, revived, proxy = entity.revive{inventory = inv}
+    local collide, revived, proxy = entity.revive{raise_revive=true,inventory = inv}
     if not revived then goto continue end
     remove_items(train, items, quality)
     ::continue::

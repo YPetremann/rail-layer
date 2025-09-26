@@ -1,15 +1,15 @@
 {
   "name": "rail-layer",
-  "version": "2.0.3",
+  "version": "0.0.1",
   "title": "Rail Layer",
   "author": "Thaui",
-  "description": "Add a locomotive that can place rails, signals.",
+  "description": "Add a locomotive that place ghost rails and signals.",
   "dependencies": [],
   "factorio_version": "2.0",
   "package": {
     "readme": "README.md",
     "gallery": [
-      "gallery/**.png"
+      "gallery/**.jpg"
     ],
     "ignore": [
       "examples/**"
@@ -17,5 +17,5 @@
     "license": "LICENSE",
     "sync_portal_details": true
   },
-  "license": "MIT"
+  "license": "MIT NON-AI"
 }

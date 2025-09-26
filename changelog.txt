@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2025-09-26
+  Features:
+    - Added the rail layer locomotive
+    - It lay down rails and signals as it moves
+    - Items are consumed from train cargo wagons
+    - Scripts only run when rail layer moves
+
+  Todo:
+    - Elevated rails are unsupported by the rail layer
+    - Trees and rocks must be manually cleared
