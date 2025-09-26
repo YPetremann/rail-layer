@@ -32,8 +32,9 @@ Perfect for building large-scale railways without construction robots.
 
 ## Things To Do
 
-- **Elevated Rails**: building rail support and supporting rails
 - **Obstacle Clearing**: Cleanning Trees and Rocks marked for deconstruction and put items in Cargo Wagon
+- **Elevated Rails**: building rail support and supporting rails
+- **Power poles**: building power poles near rails
 
 ## License
 
