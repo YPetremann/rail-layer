@@ -1,5 +1,5 @@
 local find = require("scripts.find")
-local train_action = require("scripts.train_actions")
+local revive_entity = require("scripts.revive_entity")
 
 --- Build rail ghosts after rail end.
 --- @param train LuaTrain
@@ -11,9 +11,10 @@ local function revive_rails(train, radius)
   local rail_start = rail_end.make_copy()
   rail_start.flip_direction()
 
-  -- get a cargo LuaInventory
-  local cargo = train.cargo_wagons[1]
-  local inv = cargo.get_inventory(defines.inventory.cargo_wagon)
+  local inventories = {}
+  for _, wagon in ipairs(train.cargo_wagons) do
+    table.insert(inventories, wagon.get_inventory(defines.inventory.cargo_wagon))
+  end
 
   -- try to build ghost rails
   for _, extension in ipairs(rail_end.get_rail_extensions("rail")) do
@@ -24,7 +25,7 @@ local function revive_rails(train, radius)
 
     if ramp or elevated then ghost=nil end
 
-    train_action.place_entity(train, ghost)
+    revive_entity(ghost, inventories)
   end
 end
 

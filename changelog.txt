@@ -1,7 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.4
-Date: ????
-  Changes:
+Date: 2025-09-27
+  Features:
+    - Rail Layer will now clear obstacles (trees, rocks, cliffs, buildings)
+    - Rail Layer will now place tiles if needed (landfill, concrete, etc)
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 2025-09-26

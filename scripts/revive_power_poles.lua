@@ -1,5 +1,5 @@
 local find = require("scripts.find")
-local train_action = require("scripts.train_actions")
+local revive_entity = require("scripts.revive_entity")
 
 --- Build rail ghosts after rail end.
 --- @param train LuaTrain
@@ -11,9 +11,10 @@ local function revive_power_poles(train, radius)
   if not stock_end then return end
   local surface = stock_end.surface
 
-  -- get a cargo LuaInventory
-  local cargo = train.cargo_wagons[1]
-  local inv = cargo.get_inventory(defines.inventory.cargo_wagon)
+  local inventories = {}
+  for _, wagon in ipairs(train.cargo_wagons) do
+    table.insert(inventories, wagon.get_inventory(defines.inventory.cargo_wagon))
+  end
 
   local ghosts=surface.find_entities_filtered{
     ghost_type = "electric-pole",
@@ -22,7 +23,7 @@ local function revive_power_poles(train, radius)
     radius = radius,
   }
   for _,ghost in pairs(ghosts) do
-    train_action.place_entity(train, ghost)
+    revive_entity(ghost, inventories)
   end
 end
 

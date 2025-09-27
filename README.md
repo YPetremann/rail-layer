@@ -10,6 +10,12 @@ Perfect for building large-scale railways without construction robots.
 - **Automated Rail Construction**: Places rails and signals automatically as the locomotive moves
 - **Resource Consumption**: Uses materials from train cargo wagons
 - **Backward Laying**: when the Rail Layer goes backward, rails are laid from the back of the train.
+- **Obstacle Clearing**: Cleanning Trees and Rocks marked for deconstruction and put items in Cargo Wagon
+- **Tile placement**: If a rail or a signal can't be placed because it need some tiles, the rail layer will place them.
+
+## Experimental support (enable in settings)
+
+- **Power poles**: building power poles near rails
 
 ## How To Use
 
@@ -32,9 +38,7 @@ Perfect for building large-scale railways without construction robots.
 
 ## Things To Do
 
-- **Obstacle Clearing**: Cleanning Trees and Rocks marked for deconstruction and put items in Cargo Wagon
 - **Elevated Rails**: building rail support and supporting rails
-- **Power poles**: building power poles near rails
 
 ## License
 
